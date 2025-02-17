@@ -1,0 +1,45 @@
+html {
+    overflow-y: scroll;
+    font-family: helvetica, arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    overflow: auto;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.well {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 1em;
+    min-height: 200px;
+}
+
+.row-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.output th, td {
+    border: 1px solid #000000;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.output th {
+    background-color: #333;
+    color: white;
+}
