@@ -3,8 +3,13 @@
         .addEventListener("change", handleFileSelect, false);
 
     function handleFileSelect(event) {
+        const options = {
+            styleMap: [
+                "u => u"
+            ]
+        };
         readFileInputEventAsArrayBuffer(event, function (arrayBuffer) {
-            mammoth.convertToHtml({arrayBuffer: arrayBuffer})
+            mammoth.convertToHtml({arrayBuffer: arrayBuffer},options)
                 .then(displayResult, function (error) {
                     console.error(error);
                 });
